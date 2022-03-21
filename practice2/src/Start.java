@@ -1,3 +1,4 @@
+import com.sun.source.tree.WhileLoopTree;
 import java.util.Scanner;
 
 public class Start {
@@ -105,7 +106,6 @@ public class Start {
         int x1, y1, x2, y2;     //7
 
         System.out.println("x1/y1 -- rook\nx2/y2 -- other figure");
-
         System.out.println("-------------");
 
         System.out.print("x1: ");
@@ -124,24 +124,78 @@ public class Start {
         }else{
             System.out.println("N");
         }
-         */
+
 
         int x1, y1, x2, y2;     //8
+        int a = 0;
+        String str1 = "Y";
+        String str2 = "N";
 
-        System.out.println("x1/y1 -- elephant\nx2/y2 -- other figure");
-        System.out.println("-------------");
+        do {
+            System.out.println("x1/y1 -- elephant\nx2/y2 -- other figure");
+            System.out.println("-------------");
 
-        System.out.print("x1: ");
-        x1 = in.nextInt();
-        System.out.print("y1: ");
-        y1 = in.nextInt();
-        System.out.print("x2: ");
-        x2 = in.nextInt();
-        System.out.print("y2: ");
-        y2 = in.nextInt();
+            System.out.print("x1: ");
+            x1 = in.nextInt();
+            System.out.print("y1: ");
+            y1 = in.nextInt();
+            System.out.print("x2: ");
+            x2 = in.nextInt();
+            System.out.print("y2: ");
+            y2 = in.nextInt();
 
-        if(x1 + y1 == x2 + y2){
+            if (Math.abs(x1 - x2) == Math.abs(y1 - y2)) {
+                System.out.println("answer: Y");
+            } else {
+                System.out.println("answer: N");
+            }
+            System.out.print("Завершити? (Y/N): ");
+            String answer = in.next();
+            //String answer = in.next();
+            if(answer.equalsIgnoreCase(str1)){
+                System.out.print("Stop");
+                a++;
+            }if (answer.equalsIgnoreCase(str2)){
+                System.out.println("Continue");
+            }
+        }while (a<1);
+         */
 
-        }
+        int x1, y1, x2, y2;     //9
+        int a = 0;
+        String str1 = "Y";
+        String str2 = "N";
+
+        do {
+            System.out.println("x1/y1 -- queen\nx2/y2 -- other figure");
+            System.out.println("-------------");
+
+            System.out.print("x1: ");
+            x1 = in.nextInt();
+            System.out.print("y1: ");
+            y1 = in.nextInt();
+            System.out.print("x2: ");
+            x2 = in.nextInt();
+            System.out.print("y2: ");
+            y2 = in.nextInt();
+
+            if (Math.abs(x1-x2) <= 1 || Math.abs(y1-y2) <= 1 && x1 == x2 && y1 == y2){
+                        System.out.println("answer: Y");
+            }else {
+                System.out.println("answer: N");
+            }
+
+
+            System.out.print("Завершити? (Y/N): ");
+            String answer = in.next();
+
+            if (answer.equalsIgnoreCase(str1)) {
+                System.out.print("Stop");
+                a++;
+            }
+            if (answer.equalsIgnoreCase(str2)) {
+                System.out.println("Continue");
+            }
+        }while (a < 1);
     }
 }
