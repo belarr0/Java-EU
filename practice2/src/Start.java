@@ -159,7 +159,7 @@ public class Start {
                 System.out.println("Continue");
             }
         }while (a<1);
-         */
+
 
         int x1, y1, x2, y2;     //9
         int a = 0;
@@ -191,6 +191,48 @@ public class Start {
 
             if (answer.equalsIgnoreCase(str1)) {
                 System.out.print("Stop");
+                a++;
+            }
+            if (answer.equalsIgnoreCase(str2)) {
+                System.out.println("Continue");
+            }
+        }while (a < 1);
+         */
+
+        int x1, y1, x2, y2;     //10
+        int a = 0;
+        String str1 = "Y";
+        String str2 = "N";
+
+        do {
+            System.out.println("x1/y1 -- king\nx2/y2 -- other figure");
+            System.out.println("-------------");
+
+            System.out.print("x1: ");
+            x1 = in.nextInt();
+            System.out.print("y1: ");
+            y1 = in.nextInt();
+            System.out.print("x2: ");
+            x2 = in.nextInt();
+            System.out.print("y2: ");
+            y2 = in.nextInt();
+
+            //-1 <= x1-x2 <= 1 and -1 <= y1-y2 <= 1
+            if(x1 == x2 && y1 == y2) {
+                System.out.println("???");
+            }else{
+                if ((-1 <= x1 - x2 && x1 - x2 <= 1) && (-1 <= y1 - y2 && y1 - y2 <= 1)) {
+                        System.out.println("Y");
+                }else{
+                    System.out.println("N");
+                }
+            }
+
+            System.out.print("Завершити? (Y/N): ");
+            String answer = in.next();
+
+            if (answer.equalsIgnoreCase(str1)) {
+                System.out.print("Ending...");
                 a++;
             }
             if (answer.equalsIgnoreCase(str2)) {
