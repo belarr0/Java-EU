@@ -324,8 +324,53 @@ public class Start {
                 System.out.println("Continue...");
             }
         }while (a<1);
+
+
+        int q, a = 0;       //13
+        String str1 = "Y";
+        String str2 = "N";
+
+        do {
+            System.out.print("q: ");
+            q = in.nextInt();
+
+            if (q % 4 == 0) {
+                System.out.println("Y");
+            } else {
+                System.out.println("N");
+            }
+            System.out.print("Завершити? (Y/N): ");
+            String answer = in.next();
+
+            if (answer.equalsIgnoreCase(str1)) {
+                System.out.print("Ending...");
+                a++;
+            }
+            if (answer.equalsIgnoreCase(str2)) {
+                System.out.println("Continue...");
+            }
+        }while (a<1);
          */
 
-        
+        int a, b, x;        //14
+
+        System.out.println("ax + b = 0");
+
+        System.out.print("a: ");
+        a = in.nextInt();
+        System.out.print("b: ");
+        b = in.nextInt();
+
+        if (a == 0){
+            System.out.println("INF");
+            if (b == 0){
+                System.out.println("INF");
+            }else{
+                System.out.println("N");
+            }
+        }else{
+            x = -(b/a);
+            System.out.println("x: " + x);
+        }
     }
 }
