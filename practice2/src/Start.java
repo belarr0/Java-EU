@@ -239,7 +239,7 @@ public class Start {
                 System.out.println("Continue");
             }
         }while (a < 1);
-         */
+
 
         int x1, y1, x2, y2;     //11
         int a = 0;
@@ -287,5 +287,45 @@ public class Start {
                 System.out.println("Continue");
             }
         }while(a<1);
+
+
+        int m, n, k, a = 0;        //12
+        String str1 = "Y";
+        String str2 = "N";
+
+        do {
+            System.out.println("m -- amount\nn -- stripes\nk -- tiles\n-------------");
+
+            System.out.print("m:");
+            m = in.nextInt();
+            System.out.print("n:");
+            n = in.nextInt();
+            System.out.print("k:");
+            k = in.nextInt();
+
+            if (n % 2 == 0 && k % 2 == 0) {
+                System.out.println("Y");
+            }
+            if (n % 2 == 1 && k % 2 == 1) {
+                System.out.println("Y");
+            }
+            if ((n % 2 == 0 && k % 2 == 1) || (n % 2 == 1 && k % 2 == 0)) {
+                System.out.println("N");
+            }
+
+            System.out.print("Завершити? (Y/N): ");
+            String answer = in.next();
+
+            if (answer.equalsIgnoreCase(str1)) {
+                System.out.print("Ending...");
+                a++;
+            }
+            if (answer.equalsIgnoreCase(str2)) {
+                System.out.println("Continue...");
+            }
+        }while (a<1);
+         */
+
+        
     }
 }
