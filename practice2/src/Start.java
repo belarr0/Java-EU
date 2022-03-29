@@ -350,7 +350,7 @@ public class Start {
                 System.out.println("Continue...");
             }
         }while (a<1);
-         */
+
 
         int a, b, x;        //14
 
@@ -361,16 +361,41 @@ public class Start {
         System.out.print("b: ");
         b = in.nextInt();
 
-        if (a == 0){
-            System.out.println("INF");
-            if (b == 0){
-                System.out.println("INF");
-            }else{
-                System.out.println("N");
-            }
-        }else{
-            x = -(b/a);
+        if(a<0 || a!=0){
+            x = (-b/a);
             System.out.println("x: " + x);
+        }else{
+            if(b<0){
+                System.out.println("NO");
+            }else{
+                System.out.println("INF");
+            }
+        }
+         */
+
+        int a, b, c, d;     //15
+        int x;
+
+        System.out.println("( ax + b ) : ( cx + d ) = 0");
+
+        System.out.print("a: ");
+        a = in.nextInt();
+        System.out.print("b: ");
+        b = in.nextInt();
+        System.out.print("c: ");
+        c = in.nextInt();
+        System.out.print("d: ");
+        d = in.nextInt();
+
+        if (a == 0 && b == 0) {
+            System.out.println("INF");
+        }if(a == 0 || b * c == a * d) {
+            System.out.println("NO");
+        }if(b % a == 0) {
+            x = -b / a;
+            System.out.println("x: " + x);
+        } else{
+            System.out.println("NO");
         }
     }
 }
