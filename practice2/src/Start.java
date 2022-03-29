@@ -371,7 +371,7 @@ public class Start {
                 System.out.println("INF");
             }
         }
-         */
+
 
         int a, b, c, d;     //15
         int x;
@@ -397,5 +397,45 @@ public class Start {
         } else{
             System.out.println("NO");
         }
+
+
+        int costgrn, costkop, paidgrn, paidkop, remgrn = 0, remkop = 0;     //16
+
+        do {
+            System.out.println("---------");
+
+            System.out.print("price grn: ");
+            costgrn = in.nextInt();
+            System.out.print("price kop: ");
+            costkop = in.nextInt();
+            System.out.print("give grn: ");
+            paidgrn = in.nextInt();
+            System.out.print("give kop: ");
+            paidkop = in.nextInt();
+
+            if (costgrn <= paidgrn && costkop <= paidkop) {
+                remgrn = paidgrn - costgrn;
+                remkop = paidkop - costkop;
+            } else {
+                System.out.println("Помилка");
+            }
+
+            System.out.println("Залишилося: " + remgrn + " " + remkop);
+        }while (true);
+
+
+        int b;      //17
+        System.out.print("Balls: ");
+        b = in.nextInt();
+
+        if(b % 3 == 0 || b % 5 == 0){
+            System.out.print("YES");
+        }else{
+            System.out.print("NO");
+        }
+         */
+
+        int k, m, n;        //18
+        
     }
 }
