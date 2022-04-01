@@ -435,7 +435,20 @@ public class Start {
         }
          */
 
-        int k, m, n;        //18
-        
+        int k, t, n, q = 0;        //18
+
+        System.out.print("Кількість котлет: ");
+        k = in.nextInt();
+        System.out.print("Час на смаження однієї сторони: ");
+        t = in.nextInt();
+        System.out.print("Кількість котлет на сковорідці: ");
+        n = in.nextInt();
+
+        if(k < 32000 && t < 32000 && n < 32000){
+            q = t * (k * 2);
+        }else{
+            System.out.println("Помилка");
+        }
+        System.out.print("Час за який будуть обсмажені котлети: " + q);
     }
 }
