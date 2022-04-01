@@ -468,6 +468,23 @@ public class Start {
         }
          */
 
-        
+        int n;      //20
+
+        System.out.println("На лузі пасеться...");
+        System.out.println("1 -- корів\n2 -- корова\n3 -- корови");
+        System.out.print("Ваш варіант: ");
+        n = in.nextInt();
+
+        switch (n){
+            case(1):
+                System.out.print("Не правильно");
+                break;
+            case(2):
+                System.out.print("Правильно");
+                break;
+            case(3):
+                System.out.print("Не правильно");
+                break;
+        }
     }
 }
