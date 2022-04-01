@@ -433,7 +433,7 @@ public class Start {
         }else{
             System.out.print("NO");
         }
-         */
+
 
         int k, t, n, q = 0;        //18
 
@@ -450,5 +450,24 @@ public class Start {
             System.out.println("Помилка");
         }
         System.out.print("Час за який будуть обсмажені котлети: " + q);
+
+
+        int q, w, e;    //19
+
+        System.out.print("Перше число: ");
+        q = in.nextInt();
+        System.out.print("Друге число: ");
+        w = in.nextInt();
+        System.out.print("Третє число: ");
+        e = in.nextInt();
+
+        if (q == w || q == e){
+            System.out.println(q);
+        }else{
+            System.out.println(e);
+        }
+         */
+
+        
     }
 }
