@@ -420,7 +420,7 @@ public class Start {
                 System.out.println("Помилка");
             }
 
-            System.out.println("Залишилося: " + remgrn + " " + remkop);
+            System.out.print    ln("Залишилося: " + remgrn + " " + remkop);
         }while (true);
 
 
@@ -452,7 +452,7 @@ public class Start {
         System.out.print("Час за який будуть обсмажені котлети: " + q);
 
 
-        int q, w, e;    //19
+        int q, w, e;        //19
 
         System.out.print("Перше число: ");
         q = in.nextInt();
