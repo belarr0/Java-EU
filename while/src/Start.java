@@ -13,13 +13,27 @@ public class Start {
            System.out.println(a*a);
            a++;
        }
-        */
 
-        int a, b = 1;
+
+        int a, b = 2;       //2
 
         System.out.print("Введіть число: ");
         a = in.nextInt();
 
-       
+        while (a % b != 0) {
+            b++;
+        }
+        System.out.println(b);
+         */
+
+        int n, a = 2;      //3
+
+        System.out.print("Введіть число: ");
+        n = in.nextInt();
+
+        while (a + a < n) {
+            a = a + a;
+            System.out.println(a);
+        }
     }
 }
