@@ -79,9 +79,9 @@ public class Start {
          q++;
      }
         System.out.println(q);
-         */
 
-        int q, w ,e, r = 1;     //7
+
+        int q, w ,e, r = 0;     //7
 
         System.out.print("Введіть початковий вклад: ");
         q = in.nextInt();
@@ -90,10 +90,31 @@ public class Start {
         System.out.print("Введіть бажану суму: ");
         e = in.nextInt();
 
-        while (q < e){
-            q = q + ((q / 100) * w);
+        while (q <= e){
+            //x = x + ((x / 100) * w);
+            q=((q*(100+w))/100);
             r++;
         }
         System.out.println("Роки: " + r);
+
+
+        int n0 = 0, n1 = 1, n2 = 1, q, w = 3;   //8
+
+        System.out.print("Введіть кількість: ");
+        q = in.nextInt();
+
+        while (w <= q){
+            n0 = n1 + n2;
+            n1++;
+            n2++;
+            w++;
+
+            //n1 = n2;
+            //n2 = n0;
+        }
+        System.out.println(n0);
+         */
+
+        
     }
 }
