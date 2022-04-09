@@ -51,7 +51,7 @@ public class Start {
         }else {
             System.out.print("NO");
         }
-         */
+
 
         int n, k = 0, q = 1;       //5
 
@@ -63,5 +63,37 @@ public class Start {
             k++;
         }
         System.out.println("Відповідь: " + k);
+
+
+        int q = 1;   //6
+        double x, y;
+
+        System.out.print("Введіть початкова відстань: ");
+        x = in.nextFloat();
+
+        System.out.print("Введіть кількість днів: ");
+        y = in.nextInt();
+
+        while (x <= y) {
+         x = x + ((x / 100) * 10);
+         q++;
+     }
+        System.out.println(q);
+         */
+
+        int q, w ,e, r = 1;     //7
+
+        System.out.print("Введіть початковий вклад: ");
+        q = in.nextInt();
+        System.out.print("Введіть відсотки: ");
+        w = in.nextInt();
+        System.out.print("Введіть бажану суму: ");
+        e = in.nextInt();
+
+        while (q < e){
+            q = q + ((q / 100) * w);
+            r++;
+        }
+        System.out.println("Роки: " + r);
     }
 }
