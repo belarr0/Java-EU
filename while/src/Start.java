@@ -115,6 +115,21 @@ public class Start {
         System.out.println(n0);
          */
 
-        
+        int n0 = 0, n1 = 1, n2 = 1, q, w = 3;   //9
+        //1 1 2 3 5 8 13 21 34
+
+        System.out.print("Введіть число: ");
+        q = in.nextInt();
+
+        /*
+        int i=1;
+        while(i<=count)
+        {
+            System.out.print(num1+" ");
+            int sumOfPrevTwo = num1 + num2;
+            num1 = num2;
+            num2 = sumOfPrevTwo;
+            i++;
+         */
     }
 }
