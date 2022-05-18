@@ -20,13 +20,35 @@ public class Start {
                 System.out.print(arr[i] + " ");
             }
         }
-         */
 
-        int[] arr = new int[]{1, -3, 6, 2, -9};
+
+        int[] arr = new int[]{1, -3, 6, 2, -9};     //3
 
         for (int i = 0; i < 5; i++) {
             if (arr[i] > 0){
                 System.out.print(arr[i] + " ");
+            }
+        }
+
+
+        int[] arr = new int [] {48, 85, 8, 105, 6};     //4
+        int n = 0;
+
+        for (int i = 1; i < arr.length; i++){
+            if(arr[i] > arr[i-1]){
+                n++;
+            }
+        }
+        System.out.println(n);
+         */
+
+        int[] arr = new int [] {1, 3, 4, -2, 1};     //5
+
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i - 1] < 0 && arr[i] < 0 || arr[i - 1] > 0 && arr[i] > 0){
+                System.out.println("Y");
+            }else{
+                System.out.println("N");
             }
         }
     }
