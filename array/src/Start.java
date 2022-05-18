@@ -40,7 +40,7 @@ public class Start {
             }
         }
         System.out.println(n);
-         */
+
 
         int[] arr = new int [] {1, 3, 4, -2, 1};     //5
 
@@ -51,5 +51,28 @@ public class Start {
                 System.out.println("N");
             }
         }
+
+
+        int[] arr = new int[] {1, 5, 1, 5, 1};      //6
+        int n = 0;
+
+        for (int i = 1; i < arr.length - 1; i++) {
+            if (arr[i - 1] < arr[i]) {
+                if(arr[i] > arr[i + 1]){
+                    n++;
+                }
+            }
+        }
+        System.out.println(n);
+
+
+        int[] arr = new int[] {4, 5, 3, 4, 2, 3};          //7
+
+        for (int i = 5; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+         */
+
+        
     }
 }
