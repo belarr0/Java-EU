@@ -73,6 +73,38 @@ public class Start {
         }
          */
 
-        
+        int n = 0, nums;        //8
+        int[] arr = new int[] {4, 5, 3, 4, 2, 3};
+
+        /*
+        System.out.print("¬вед≥ть розм≥р масиву: ");
+        n = in.nextInt();
+        int[] arr = new int[n];
+         */
+
+        /*
+        for (int i = 0; i < n; i++){    //дл€ ввода значений массива ручками
+            nums = in.nextInt();        //{0, 1, 2, ...}
+            arr[i] = nums;
+        }
+        */
+
+        /*
+        for (int i = 0; i < arr.length - 1; i++){
+            arr[i] = arr[i + 1];
+            System.out.print(arr[i] + " ");
+        }
+         */
+
+        arr[1] = arr[0];
+        arr[3] = arr[2];
+        arr[5] = arr[4];
+
+
+        for (int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
+
+        //for (int i = 0; i < arr.length; i++){ System.out.println(arr[i]); }
     }
 }
