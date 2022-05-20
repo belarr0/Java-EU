@@ -85,9 +85,18 @@ public class Start {
         }
 
         System.out.println(Arrays.toString(array));
-        */
 
-        int[] arr = new int[] {4, 5, 3, 4, 2, 3};       //9
 
+        int[] arr = {4, 5, 3, 4, 2, 3};       //9
+
+        int temp = arr[5];
+        for(int i = 5; i > 0; i--) {
+            arr[i] = arr[i-1];
+        }
+
+        arr[0] = temp;
+
+        System.out.println(Arrays.toString(arr));
+         */
     }
 }
