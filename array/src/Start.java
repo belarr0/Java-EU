@@ -1,4 +1,5 @@
 import javax.annotation.processing.SupportedSourceVersion;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Start {
@@ -72,31 +73,21 @@ public class Start {
         for (int i = 5; i >= 0; i--) {
             System.out.print(arr[i] + " ");
         }
-        */
-
-        int[] arr = new int[] {1, 2, 3, 4, 5, 6};       //8
-
-        /*
-        System.out.print("¬вед≥ть розм≥р масиву: ");
-        n = in.nextInt();
-        int[] arr = new int[n];
-         */
-
-        /*
-        for (int i = 0; i < n; i++){    //дл€ ввода значений массива ручками
-            nums = in.nextInt();        //{0, 1, 2, ...}
-            arr[i] = nums;
-        }
-        */
 
 
+        int[] array = new int[]{4, 5, 3, 4, 2, 3};       //8
 
-        for(int i = 0; i < arr.length; i++){
-
-            System.out.print(arr[i] + " ");
+        for (int i = 0; i < array.length-1; i++) {
+            int temp = array[i];
+            array[i] = array[i + 1];
+            array[i + 1] = temp;
+            i++;
         }
 
-        //for (int i = 0; i < arr.length; i++){ System.out.println(arr[i]); }
+        System.out.println(Arrays.toString(array));
+        */
+
+        int[] arr = new int[] {4, 5, 3, 4, 2, 3};       //9
 
     }
 }
