@@ -97,6 +97,55 @@ public class Start {
         arr[0] = temp;
 
         System.out.println(Arrays.toString(arr));
-         */
+
+
+        int [] arr = new int [] {1, 2, 3};      //10
+        int max = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i] > max)
+                max = arr[i];
+        }
+        System.out.print(max);
+
+
+        int[] arr = new int[] {1, 1, 2, 4, 8};      //11
+        int q = 0;
+
+        for (int i = 0; i < arr.length - 1; i++){
+            if (arr[i] != arr[i + 1]){
+                q++;
+            }
+        }
+        System.out.print(q);
+
+
+        int q, nums, petro;      //12
+
+        System.out.print("Розмір шеренги: ");
+        q = in.nextInt();
+        int [] arr = new int[q];
+
+        for (int i = 0; i < q; i++){
+            System.out.print(i + 1 + ": ");
+            nums = in.nextInt();
+            arr[i] = nums;
+        }
+
+        System.out.println();
+        System.out.println("Шеренга: " + Arrays.toString(arr));
+        System.out.println();
+
+        System.out.print("Зріст Петра: ");
+        petro = in.nextInt();
+
+        for (int i = 0; i < arr.length; i++){
+            if(petro < arr[i] && arr[i + 1] < petro){
+                System.out.print("Його номер: " + i + 2);
+                break;
+            }
+        }
+        */
+
+        
     }
 }
