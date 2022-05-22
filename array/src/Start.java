@@ -90,6 +90,7 @@ public class Start {
         int[] arr = {4, 5, 3, 4, 2, 3};       //9
 
         int temp = arr[5];
+
         for(int i = 5; i > 0; i--) {
             arr[i] = arr[i-1];
         }
@@ -146,6 +147,19 @@ public class Start {
         }
         */
 
-        
+        int[] arr = new int [] {5,3,7,4,6};         //14
+
+        System.out.println("Було:  " + Arrays.toString(arr));
+
+        int temp1 = arr[0];
+        int temp2 = arr[1];
+        for (int i = 0; i < 3; i++){
+            arr[i] = arr[i + 2];
+
+        }
+        arr[3] = temp1;
+        arr[4] = temp2;
+
+        System.out.print("Стало: " + Arrays.toString(arr));
     }
 }
